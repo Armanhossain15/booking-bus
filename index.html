@@ -155,7 +155,7 @@
                             <div>
                                 <button class="btn text-lg text-[#1DD100] bg-[#1DD1001A] border-[#1DD1004D]">
                                     <img src="images/seat-green.png" alt="">
-                                    <span>40</span>Seats left
+                                    <span id="remaining-seat">40</span>Seats left
                                 </button>
                             </div>
                         </div>
@@ -189,7 +189,7 @@
                             </div>
                         </div>
 
-                        <div class="sit-plan">
+                        <div class="bus-all-sit">
                             <div id="driver sit" class=" flex  justify-between">
                                 <div class="driver sit-left flex gap-4 items-center"></div>
                                 <div class="driver sitflex gap-4">
@@ -200,205 +200,207 @@
                                 </div>
 
                             </div>
-                            <div id="A-sit-plan" class=" flex  justify-between mt-5">
-                                <div class="A-sit-plan-left flex gap-4 items-center">
-                                    <h1 class="font-inter text-xl text-[#00000080] mr-1 ">A</h1>
-                                    <div id="A1"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#000 00080]">
-                                        A1</div>
-                                    <div id="A2"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
-                                        A2</div>
+                            <div id="sit-plan">
+                                <div id="A-sit-plan" class=" flex  justify-between mt-5">
+                                    <div class="A-sit-plan-left flex gap-4 items-center">
+                                        <h1 class="font-inter text-xl text-[#00000080] mr-1 ">A</h1>
+                                        <div id="A1"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            A1</div>
+                                        <div id="A2"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            A2</div>
+                                    </div>
+                                    <div class="A-sit-plan flex gap-4">
+                                        <div id="A3"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            A3</div>
+                                        <div id="A4"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            A4</div>
+                                    </div>
+    
                                 </div>
-                                <div class="A-sit-plan-right flex gap-4">
-                                    <div id="A1"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#000 00080]">
-                                        A3</div>
-                                    <div id="A2"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
-                                        A4</div>
+    
+                                <div id="B-sit-plan" class=" flex  justify-between mt-5">
+                                    <div class="B-sit-plan-left flex gap-4 items-center">
+                                        <h1 class="font-inter text-xl text-[#00000080] mr-1 ">B</h1>
+                                        <div id="B1"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            B1</div>
+                                        <div id="B2"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            B2</div>
+                                    </div>
+                                    <div class="B-sit-plan-right flex gap-4">
+                                        <div id="B3"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            B3</div>
+                                        <div id="B4"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            B4</div>
+                                    </div>
+    
                                 </div>
-
+                                <div id="C-sit-plan" class=" flex  justify-between mt-5">
+                                    <div class="C-sit-plan-left flex gap-4 items-center">
+                                        <h1 class="font-inter text-xl text-[#00000080] mr-1 ">C</h1>
+                                        <div id="C1"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            C1</div>
+                                        <div id="C2"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            C2</div>
+                                    </div>
+                                    <div class="C-sit-plan-right flex gap-4">
+                                        <div id="C3"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            C3</div>
+                                        <div id="C4"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            C4</div>
+                                    </div>
+    
+                                </div>
+                                <div id="D-sit-plan" class=" flex  justify-between mt-5">
+                                    <div class="D-sit-plan-left flex gap-4 items-center">
+                                        <h1 class="font-inter text-xl text-[#00000080] mr-1 ">D</h1>
+                                        <div id="D1"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            D1</div>
+                                        <div id="D2"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            D2</div>
+                                    </div>
+                                    <div class="D-sit-plan-right flex gap-4">
+                                        <div id="D3"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            D3</div>
+                                        <div id="D4"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            D4</div>
+                                    </div>
+    
+                                </div>
+                                <div id="E-sit-plan" class=" flex  justify-between mt-5">
+                                    <div class="E-sit-plan-left flex gap-4 items-center">
+                                        <h1 class="font-inter text-xl text-[#00000080] mr-1 ">E</h1>
+                                        <div id="E1"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            E1</div>
+                                        <div id="E2"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            E2</div>
+                                    </div>
+                                    <div class="E-sit-plan-right flex gap-4">
+                                        <div id="E3"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            E3</div>
+                                        <div id="E4"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            E4</div>
+                                    </div>
+    
+                                </div>
+                                <div id="F-sit-plan" class=" flex  justify-between mt-5">
+                                    <div class="F-sit-plan-left flex gap-4 items-center">
+                                        <h1 class="font-inter text-xl text-[#00000080] mr-1 ">F</h1>
+                                        <div id="F1"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            F1</div>
+                                        <div id="F2"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            F2</div>
+                                    </div>
+                                    <div class="F-sit-plan-right flex gap-4">
+                                        <div id="F3"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            F3</div>
+                                        <div id="F4"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            F4</div>
+                                    </div>
+    
+                                </div>
+                                <div id="G-sit-plan" class=" flex  justify-between mt-5">
+                                    <div class="G-sit-plan-left flex gap-4 items-center">
+                                        <h1 class="font-inter text-xl text-[#00000080] mr-1 ">G</h1>
+                                        <div id="G1"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            G1</div>
+                                        <div id="G2"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            G2</div>
+                                    </div>
+                                    <div class="G-sit-plan-right flex gap-4">
+                                        <div id="G3"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            G3</div>
+                                        <div id="G4"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            G4</div>
+                                    </div>
+    
+                                </div>
+                                <div id="H-sit-plan" class=" flex  justify-between mt-5">
+                                    <div class="H-sit-plan-left flex gap-4 items-center">
+                                        <h1 class="font-inter text-xl text-[#00000080] mr-1 ">H</h1>
+                                        <div id="H1"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            H1</div>
+                                        <div id="H2"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            H2</div>
+                                    </div>
+                                    <div class="H-sit-plan-right flex gap-4">
+                                        <div id="H3"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            H3</div>
+                                        <div id="H4"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            H4</div>
+                                    </div>
+    
+                                </div>
+                                <div id="I-sit-plan" class=" flex  justify-between mt-5">
+                                    <div class="I-sit-plan-left flex gap-4 items-center">
+                                        <h1 class="font-inter text-xl text-[#00000080] mr-3 ">I</h1>
+                                        <div id="I1"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            I1</div>
+                                        <div id="I2"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            I2</div>
+                                    </div>
+                                    <div class="I-sit-plan-right flex gap-4">
+                                        <div id="I3"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            I3</div>
+                                        <div id="I4"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            I4</div>
+                                    </div>
+    
+                                </div>
+                                <div id="J-sit-plan" class=" flex  justify-between mt-5">
+                                    <div class="J-sit-plan-left flex gap-4 items-center">
+                                        <h1 class="font-inter text-xl text-[#00000080] mr-1 ">J</h1>
+                                        <div id="J1"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            J1</div>
+                                        <div id="J2"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            J2</div>
+                                    </div>
+                                    <div class="J-sit-plan-right flex gap-4">
+                                        <div id="J3"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            J3</div>
+                                        <div id="J4"
+                                            class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
+                                            J4</div>
+                                    </div>
                             </div>
-
-                            <div id="B-sit-plan" class=" flex  justify-between mt-5">
-                                <div class="B-sit-plan-left flex gap-4 items-center">
-                                    <h1 class="font-inter text-xl text-[#00000080] mr-1 ">B</h1>
-                                    <div id="B1"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#000 00080]">
-                                        B1</div>
-                                    <div id="B2"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
-                                        B2</div>
-                                </div>
-                                <div class="B-sit-plan-right flex gap-4">
-                                    <div id="B1"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#000 00080]">
-                                        B3</div>
-                                    <div id="B2"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
-                                        B4</div>
-                                </div>
-
-                            </div>
-                            <div id="C-sit-plan" class=" flex  justify-between mt-5">
-                                <div class="C-sit-plan-left flex gap-4 items-center">
-                                    <h1 class="font-inter text-xl text-[#00000080] mr-1 ">C</h1>
-                                    <div id="C1"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#000 00080]">
-                                        C1</div>
-                                    <div id="C2"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
-                                        C2</div>
-                                </div>
-                                <div class="C-sit-plan-right flex gap-4">
-                                    <div id="C1"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#000 00080]">
-                                        C3</div>
-                                    <div id="C2"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
-                                        C4</div>
-                                </div>
-
-                            </div>
-                            <div id="D-sit-plan" class=" flex  justify-between mt-5">
-                                <div class="D-sit-plan-left flex gap-4 items-center">
-                                    <h1 class="font-inter text-xl text-[#00000080] mr-1 ">D</h1>
-                                    <div id="D1"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#000 00080]">
-                                        D1</div>
-                                    <div id="D2"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
-                                        D2</div>
-                                </div>
-                                <div class="D-sit-plan-right flex gap-4">
-                                    <div id="D1"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#000 00080]">
-                                        D3</div>
-                                    <div id="D2"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
-                                        D4</div>
-                                </div>
-
-                            </div>
-                            <div id="E-sit-plan" class=" flex  justify-between mt-5">
-                                <div class="E-sit-plan-left flex gap-4 items-center">
-                                    <h1 class="font-inter text-xl text-[#00000080] mr-1 ">E</h1>
-                                    <div id="E1"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#000 00080]">
-                                        E1</div>
-                                    <div id="E2"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
-                                        E2</div>
-                                </div>
-                                <div class="E-sit-plan-right flex gap-4">
-                                    <div id="E1"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#000 00080]">
-                                        E3</div>
-                                    <div id="E2"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
-                                        E4</div>
-                                </div>
-
-                            </div>
-                            <div id="F-sit-plan" class=" flex  justify-between mt-5">
-                                <div class="F-sit-plan-left flex gap-4 items-center">
-                                    <h1 class="font-inter text-xl text-[#00000080] mr-1 ">F</h1>
-                                    <div id="F1"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#000 00080]">
-                                        F1</div>
-                                    <div id="F2"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
-                                        F2</div>
-                                </div>
-                                <div class="F-sit-plan-right flex gap-4">
-                                    <div id="F1"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#000 00080]">
-                                        F3</div>
-                                    <div id="F2"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
-                                        F4</div>
-                                </div>
-
-                            </div>
-                            <div id="G-sit-plan" class=" flex  justify-between mt-5">
-                                <div class="G-sit-plan-left flex gap-4 items-center">
-                                    <h1 class="font-inter text-xl text-[#00000080] mr-1 ">G</h1>
-                                    <div id="G1"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#000 00080]">
-                                        G1</div>
-                                    <div id="G2"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
-                                        G2</div>
-                                </div>
-                                <div class="G-sit-plan-right flex gap-4">
-                                    <div id="G1"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#000 00080]">
-                                        G3</div>
-                                    <div id="G2"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
-                                        G4</div>
-                                </div>
-
-                            </div>
-                            <div id="H-sit-plan" class=" flex  justify-between mt-5">
-                                <div class="H-sit-plan-left flex gap-4 items-center">
-                                    <h1 class="font-inter text-xl text-[#00000080] mr-1 ">H</h1>
-                                    <div id="H1"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#000 00080]">
-                                        H1</div>
-                                    <div id="H2"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
-                                        H2</div>
-                                </div>
-                                <div class="H-sit-plan-right flex gap-4">
-                                    <div id="H1"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#000 00080]">
-                                        H3</div>
-                                    <div id="H2"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
-                                        H4</div>
-                                </div>
-
-                            </div>
-                            <div id="I-sit-plan" class=" flex  justify-between mt-5">
-                                <div class="I-sit-plan-left flex gap-4 items-center">
-                                    <h1 class="font-inter text-xl text-[#00000080] mr-3 ">I</h1>
-                                    <div id="I1"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#000 00080]">
-                                        I1</div>
-                                    <div id="I2"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
-                                        I2</div>
-                                </div>
-                                <div class="I-sit-plan-right flex gap-4">
-                                    <div id="I1"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#000 00080]">
-                                        I3</div>
-                                    <div id="I2"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
-                                        I4</div>
-                                </div>
-
-                            </div>
-                            <div id="J-sit-plan" class=" flex  justify-between mt-5">
-                                <div class="J-sit-plan-left flex gap-4 items-center">
-                                    <h1 class="font-inter text-xl text-[#00000080] mr-1 ">J</h1>
-                                    <div id="J1"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#000 00080]">
-                                        J1</div>
-                                    <div id="J2"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
-                                        J2</div>
-                                </div>
-                                <div class="J-sit-plan-right flex gap-4">
-                                    <div id="J1"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#000 00080]">
-                                        J3</div>
-                                    <div id="J2"
-                                        class="bg-gray-200 w-28 h-12 flex items-center justify-center rounded text-[#00000080]">
-                                        J4</div>
-                                </div>
 
                             </div>
                         </div>
@@ -408,13 +410,13 @@
                         <h1
                             class="font-raleway text-2xl font-semibold text-black border-b-2 border-gray-300 border-dashed pb-3 mb-5">
                             Select Your Seat</h1>
-                        <div class=" bg-[#f7f8f8] px-8 py-6 rounded-xl">
+                        <div id="selected-seat" class=" bg-[#f7f8f8] px-8 py-6 rounded-xl">
                             <div class="flex  justify-between border-b-2 border-gray-300 border-dashed pb-3">
-                                <h3 class="seat font-inter text-base ">Seat</h3>
+                                <h3  class="seat font-inter text-base ">Seat <span id="seat-quantity" class="bg-[#1DD100] py-1 px-2 rounded text-white">0</span></h3>
                                 <h3 class="clas font-inter text-base s">Class</h3>
                                 <h3 class="pric font-inter text-base e">Price</h3>
                             </div>
-                            <div class="flex  justify-between py-3">
+                            <!-- <div class="flex  justify-between py-3">
                                 <p class="seat font-inter text-base text-[#00000080]">C2</p>
                                 <p class="clas font-inter text-base text-[#00000080]">Economoy</p>
                                 <p class="pric font-inter text-base text-[#00000080]">520</p>
@@ -423,6 +425,15 @@
                                 <p class="seat font-inter text-base text-[#00000080]">C2</p>
                                 <p class="clas font-inter text-base text-[#00000080]">Economoy</p>
                                 <p class="pric font-inter text-base text-[#00000080]">520</p>
+                            </div> -->
+                            <div class="flex justify-between py-3 border-b-2 border-gray-400">
+                                
+                                    <div id="seat-name" class="font-inter text-base text-[#00000080] flex flex-col gap-y-3"></div>
+                                
+                                    <div id="seat-class-name" class="font-inter text-base text-[#00000080] flex flex-col gap-y-3"></div>
+                                
+                                    <div id="seat-price" class="font-inter text-base text-[#00000080] flex flex-col gap-y-3"></div>
+                                
                             </div>
                             <div class="flex  justify-between  py-3">
                                 <p class="seat font-inter text-base font-medium text-black">Total Price</p>
@@ -469,6 +480,7 @@
         <!-- sit booking end -->
     </main>
     <!-- javascript file -->
+    <script src="js/utility.js"></script>
     <script src="js/index.js"></script>
 </body>
 
