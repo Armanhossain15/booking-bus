@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -11,19 +11,76 @@
     <!-- raleway font & inter font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <style>
-        .font-raleway{
+        .font-raleway {
             font-family: "Raleway", sans-serif;
         }
-        .font-inter{
+
+        .font-inter {
             font-family: "Inter", sans-serif;
         }
     </style>
 </head>
 
 <body>
-
+    <nav>
+        <div class="navbar bg-base-100 w-4/5 mx-auto py-6">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">BOOKINGBUS</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <button class="btn text-lg text-[#1DD100] bg-[#1DD1001A] border-[#1DD1004D]">Bus
+                    <img src="images/bus-icon.png" alt="">
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- banner -->
+        <div class="banner w-4/5 mx-auto rounded-2xl pt-2">
+            <div class="hero rounded-2xl py-32" 
+                style="background-image: url(images/banner.png);">
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="">
+                        <h1 class="mb-5 text-5xl font-extrabold text-white font-raleway ">
+                            End-to-End Travel with <br>
+                            <span class="text-[#1DD100]">P Paribahan</span>
+                        </h1>
+                        <p class="mb-5 w-2/3 mx-auto font-inter text-lg">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                        <button class="btn btn-primary bg-[#1DD100] border-none text-black">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- banner -->
+    </main>
 </body>
 
 </html>
