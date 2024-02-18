@@ -17,7 +17,7 @@ siteId.addEventListener('click', function (event) {
         console.log('yes')
     }
     else{
-        console.log('no')
+        alert('MORE THEN 4 SEAT NOT ALLOWED')
     }
 })
 
@@ -38,12 +38,15 @@ document.getElementById('cupon-field').addEventListener('keyup', function (event
 document.getElementById('btn-apply').addEventListener('click', function () {
     const cuponField = document.getElementById('cupon-field')
     const cuponFieldValue = cuponField.value
-    
+    const cuponInputFieldDiv = document.getElementById('cupon-input-field-div')
     if (cuponFieldValue === 'NEW15') {
         discount(15)
+        cuponInputFieldDiv.classList.add('hidden')
+        
     }
     else if (cuponFieldValue === 'Couple 20') {
         discount(20)
+        cuponInputFieldDiv.classList.add('hidden')
     }
 })
 
