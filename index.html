@@ -64,7 +64,7 @@
     </nav>
     <main>
         <!-- banner start-->
-        <div class="banner w-4/5 mx-auto rounded-2xl pt-2 hidden">
+        <div class="banner w-4/5 mx-auto rounded-2xl pt-2 ">
             <div class="hero rounded-2xl py-32" style="background-image: url(images/banner.png);">
                 <div class="hero-content text-center text-neutral-content">
                     <div class="">
@@ -85,7 +85,7 @@
         <!-- banner end-->
 
         <!-- cupon offer start-->
-        <div class="offer w-4/5 mx-auto pt-20 pb-11 hidden">
+        <div class="offer w-4/5 mx-auto pt-20 pb-11 ">
             <h1 class="text-center text-3xl font-raleway font-bold">Best offers for you</h1>
             <div class="cupon flex  justify-between gap-x-6 pt-9">
                 <div
@@ -131,7 +131,7 @@
         <!-- sit booking start -->
         <section id="sit booking" class="bg-gray-100 py-20">
             <div class="sit-book w-4/5 mx-auto ">
-                <div class="div-header hidden">
+                <div class="div-header ">
                     <h1 class="text-center text-3xl font-raleway font-bold">P.H Paribahan</h1>
                     <p class="w-2/4 mx-auto text-center py-4">Yes, you can run unit tests and view the results directly
                         within the app. The integrated testing features
@@ -168,7 +168,7 @@
                 </div>
 
                 <!-- lower div -->
-                <div class=" bg-white mt-8 p-9   flex  w-full rounded-3xl relative">
+                <div class=" bg-white mt-8 p-9   flex   w-full rounded-3xl relative">
                     <div class="left w-2/3  p-6 border-r-2 border-gray-300 border-dashed">
                         <div>
                             <h1 class="font-raleway text-2xl font-semibold text-black">Select Your Seat</h1>
@@ -416,16 +416,6 @@
                                 <h3 class="clas font-inter text-base s">Class</h3>
                                 <h3 class="pric font-inter text-base e">Price</h3>
                             </div>
-                            <!-- <div class="flex  justify-between py-3">
-                                <p class="seat font-inter text-base text-[#00000080]">C2</p>
-                                <p class="clas font-inter text-base text-[#00000080]">Economoy</p>
-                                <p class="pric font-inter text-base text-[#00000080]">520</p>
-                            </div>
-                            <div class="flex  justify-between border-b-2 border-gray-400 py-3">
-                                <p class="seat font-inter text-base text-[#00000080]">C2</p>
-                                <p class="clas font-inter text-base text-[#00000080]">Economoy</p>
-                                <p class="pric font-inter text-base text-[#00000080]">520</p>
-                            </div> -->
                             <div class="flex justify-between py-3 border-b-2 border-gray-400">
                                 
                                     <div id="seat-name" class="font-inter text-base text-[#00000080] flex flex-col gap-y-3"></div>
@@ -438,16 +428,16 @@
                             <div class="flex  justify-between  py-3">
                                 <p class="seat font-inter text-base font-medium text-black">Total Price</p>
 
-                                <p class="pric font-inter text-base font-medium text-black">BDT <span>1100</span></p>
+                                <p  class="pric font-inter text-base font-medium text-black">BDT <span id="total-price">0</span></p>
                             </div>
                             <div class="flex  justify-between items-center py-1 bg-white px-2 rounded-xl ">
-                                <input type="text" placeholder="Have any copupon?" class="input w-full max-w-xs" />
-                                <button class="btn btn-sm bg-[#1DD100] text-white border-none">Apply</button>
+                                <input id="cupon-field" type="text" placeholder="Have any copupon?" class="input w-full max-w-xs" />
+                                <button id="btn-apply" class="btn btn-sm bg-[#1DD100] hover:bg-[#1DD100] text-white border-none" disabled>Apply</button>
                             </div>
                             <div class="flex  justify-between  py-3">
                                 <p class="seat font-inter text-base font-medium text-black">Grand Total</p>
 
-                                <p class="pric font-inter text-base font-medium text-black">BDT <span>1100</span></p>
+                                <p class="pric font-inter text-base font-medium text-black">BDT <span id="Grand-total">00</span></p>
                             </div>
                         </div>
                         <div class="input-field mt-2">

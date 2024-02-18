@@ -36,6 +36,27 @@ function addSeatNameOnListing(elementId){
     const seatPrice = document.getElementById('seat-price')
     const p2 = document.createElement('p')
     p2.innerText = 550
+    p2.classList.add('selected-seat-price')
     seatPrice.appendChild(p2)
 
+}
+
+function addTotalPrice(elementId){
+    const element = document.getElementById(elementId)
+    const elementValue = parseInt(element.innerText)
+    const totalPrice = document.getElementById('total-price')
+    const newTotalPrice = elementValue + 550
+    totalPrice.innerText = newTotalPrice
+    const GrandTotal = document.getElementById('Grand-total')
+    GrandTotal.innerText = newTotalPrice
+}
+
+function discount(disabledPercent){
+        const totalPrice = document.getElementById('total-price')
+        const totalPricetext = totalPrice.innerText
+        const totalPriceNumber = parseInt(totalPricetext)
+        const discount = totalPriceNumber * disabledPercent / 100
+        const newTotalPrice= totalPriceNumber - discount
+        const grandTotal = document.getElementById('Grand-total')
+        grandTotal.innerText = newTotalPrice
 }
