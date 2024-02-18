@@ -1,33 +1,39 @@
 const siteId = document.getElementById('sit-plan')
 siteId.addEventListener('click', function (event) {
     const element = event.target.innerText
-    const seatName = document.getElementById('seat-name')
-    const siteNameChilds = seatName.childNodes
-    const siteNameChildsArray = []
-    for (const siteNameChild of siteNameChilds) {
-        siteNameChildsArray.push(siteNameChild)
-    }
-    const siteNameChildsArrayLength =  siteNameChildsArray.length
-    if(siteNameChildsArrayLength <=3){
+    const siteNameChildsArrayLength= siteNameArrayLength('seat-name')
+    if(siteNameChildsArrayLength <=4){
         addBgColor(element)
         addSeatQuantity()
         removeSeatQuantity()
         addSeatNameOnListing(element)
         addTotalPrice('total-price')
-        console.log('yes')
     }
     else{
         alert('MORE THEN 4 SEAT NOT ALLOWED')
     }
 })
-
+document.getElementById('number-input-field').addEventListener('keyup',function(event){
+    const inputValue = event.target.value
+    const inputValueLength = inputValue.length
+    const seatQuantity = document.getElementById('seat-quantity')
+    const btnNext = document.getElementById('btn-next')
+    if(seatQuantity.innerText>=1 && inputValueLength >= 1) {
+         btnNext.removeAttribute('disabled')
+    }
+     else{
+        btnNext.setAttribute('disabled', true)
+     }
+    
+})
 document.getElementById('cupon-field').addEventListener('keyup', function (event) {
     const inputValue = event.target.value
     const btnApply = document.getElementById('btn-apply')
-    if (inputValue === 'NEW15') {
+    const seatQuantity = document.getElementById('seat-quantity')
+    if ( seatQuantity.innerText>=4 && inputValue === 'NEW15') {
         btnApply.removeAttribute('disabled')
     }
-    else if (inputValue === 'Couple 20') {
+    else if ( seatQuantity.innerText>=4 && inputValue === 'Couple 20') {
         btnApply.removeAttribute('disabled')
     }
     else {
@@ -49,4 +55,3 @@ document.getElementById('btn-apply').addEventListener('click', function () {
         cuponInputFieldDiv.classList.add('hidden')
     }
 })
-

@@ -60,3 +60,13 @@ function discount(disabledPercent){
         const grandTotal = document.getElementById('Grand-total')
         grandTotal.innerText = newTotalPrice
 }
+function siteNameArrayLength (siteNameId){
+    const seatName = document.getElementById(siteNameId)
+    const siteNameChilds = seatName.childNodes
+    const siteNameChildsArray = []
+    for (const siteNameChild of siteNameChilds) {
+        siteNameChildsArray.push(siteNameChild)
+    }
+    const siteNameChildsArrayLength =  siteNameChildsArray.length
+    return siteNameChildsArrayLength
+}
