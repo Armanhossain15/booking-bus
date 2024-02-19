@@ -1,12 +1,17 @@
 const siteId = document.getElementById('sit-plan')
+const siteNameValueArray = []
 siteId.addEventListener('click', function (event) {
     const element = event.target.innerText
     const siteNameChildsArrayLength= siteNameArrayLength('seat-name')
-    if(siteNameChildsArrayLength <=4){
+    if(siteNameValueArray.includes(element)){
+        alert('Already exist')
+    }
+    else if(siteNameChildsArrayLength <=4 ){
         addBgColor(element)
         addSeatQuantity()
         removeSeatQuantity()
         addSeatNameOnListing(element)
+        siteNameValueArray.push(element)
         addTotalPrice('total-price')
     }
     else{
